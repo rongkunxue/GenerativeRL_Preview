@@ -7,7 +7,7 @@
   <title>grl.datasets &mdash; GenerativeRL v0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
 
   
@@ -18,7 +18,7 @@
         <script src="../../_static/jquery.js?v=5d32c60e"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
         <script src="../../_static/documentation_options.js?v=2fea6348"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -61,19 +61,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../algorithms/index.html">grl.algorithms</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">grl.datasets</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#minerlvideodataset">MineRLVideoDataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.MineRLVideoDataset"><code class="docutils literal notranslate"><span class="pre">MineRLVideoDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.MineRLVideoDataset"><code class="docutils literal notranslate"><span class="pre">MineRLVideoDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grl.datasets.MineRLVideoDataset.__init__"><code class="docutils literal notranslate"><span class="pre">MineRLVideoDataset.__init__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#minerlimagedataset">MineRLImageDataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.MineRLImageDataset"><code class="docutils literal notranslate"><span class="pre">MineRLImageDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.MineRLImageDataset"><code class="docutils literal notranslate"><span class="pre">MineRLImageDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grl.datasets.MineRLImageDataset.__init__"><code class="docutils literal notranslate"><span class="pre">MineRLImageDataset.__init__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#qgpod4rldataset">QGPOD4RLDataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.QGPOD4RLDataset"><code class="docutils literal notranslate"><span class="pre">QGPOD4RLDataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.QGPOD4RLDataset"><code class="docutils literal notranslate"><span class="pre">QGPOD4RLDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grl.datasets.QGPOD4RLDataset.__init__"><code class="docutils literal notranslate"><span class="pre">QGPOD4RLDataset.__init__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#qgpodataset">QGPODataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.QGPODataset"><code class="docutils literal notranslate"><span class="pre">QGPODataset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grl.datasets.QGPODataset"><code class="docutils literal notranslate"><span class="pre">QGPODataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grl.datasets.QGPODataset.__init__"><code class="docutils literal notranslate"><span class="pre">QGPODataset.__init__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -122,6 +134,23 @@
 <dt>Interface:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">__init__</span></code>, <code class="docutils literal notranslate"><span class="pre">__getitem__</span></code>, <code class="docutils literal notranslate"><span class="pre">__len__</span></code></p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="grl.datasets.MineRLVideoDataset.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/grl/datasets/minecraft.html#MineRLVideoDataset.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#grl.datasets.MineRLVideoDataset.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Overview:</dt><dd><p>Initialize the dataset.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">EasyDict</span></code>) – The configuration.</p></li>
+<li><p><strong>transform</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">torchvision.transforms.Compose</span></code>) – The transformation.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -136,6 +165,23 @@
 <dt>Interface:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">__init__</span></code>, <code class="docutils literal notranslate"><span class="pre">__getitem__</span></code>, <code class="docutils literal notranslate"><span class="pre">__len__</span></code></p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="grl.datasets.MineRLImageDataset.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/grl/datasets/minecraft.html#MineRLImageDataset.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#grl.datasets.MineRLImageDataset.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Overview:</dt><dd><p>Initialize the dataset.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">EasyDict</span></code>) – The configuration.</p></li>
+<li><p><strong>transform</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">torchvision.transforms.Compose</span></code>) – The transformation.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -150,6 +196,23 @@
 <dt>Interface:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">__init__</span></code>, <code class="docutils literal notranslate"><span class="pre">__getitem__</span></code>, <code class="docutils literal notranslate"><span class="pre">__len__</span></code>.</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="grl.datasets.QGPOD4RLDataset.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/grl/datasets/qgpo.html#QGPOD4RLDataset.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#grl.datasets.QGPOD4RLDataset.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Overview:</dt><dd><p>Initialization method of QGPOD4RLDataset class</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>env_id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – The environment id</p></li>
+<li><p><strong>device</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – The device to store the dataset</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -164,6 +227,15 @@
 <dt>Interface:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">__init__</span></code>, <code class="docutils literal notranslate"><span class="pre">__getitem__</span></code>, <code class="docutils literal notranslate"><span class="pre">__len__</span></code>.</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="grl.datasets.QGPODataset.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/grl/datasets/qgpo.html#QGPODataset.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#grl.datasets.QGPODataset.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Overview:</dt><dd><p>Initialization method of QGPOD4RLDataset class</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
