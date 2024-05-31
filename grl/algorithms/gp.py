@@ -1425,7 +1425,10 @@ class GPAlgorithm:
                     evaluation_results[
                         f"evaluation/guidance_scale:[{guidance_scale}]/return_min"
                     ] = return_min
-
+                    log.info(f"return_mean: {return_mean}")
+                    log.info(f"return_std: {return_std}")
+                    log.info(f"return_max: {return_max}")
+                    log.info(f"return_min: {return_min}")
                     if isinstance(self.dataset,GPOD4RLDataset):
                         env_id=config.dataset.args.env_id
                         evaluation_results[f"evaluation/guidance_scale:[{guidance_scale}]/return_mean_normalized"]=d4rl.get_normalized_score(env_id, return_mean)
